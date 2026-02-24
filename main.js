@@ -65,3 +65,20 @@ const swiper5 = new Swiper("._fixed .swiper", {
   spaceBetween: 0,
   freeMode: false, // 자연스러운 스크롤
 });
+
+let lastScroll = 0;
+const header = document.querySelector("._fixed");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+
+  if (currentScroll > lastScroll) {
+    // 아래로 스크롤
+    header.classList.add("hide");
+  } else {
+    // 위로 스크롤
+    header.classList.remove("hide");
+  }
+
+  lastScroll = currentScroll;
+});
