@@ -674,4 +674,5 @@ section.section_4 .top a::after {
   text-align: center;
   width: 100%;
   display: inline-block;
+  font-size: 20px;
 }
