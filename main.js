@@ -60,3 +60,8 @@ const swiper4 = new Swiper(".header-snb .swiper", {
   spaceBetween: 35,
   freeMode: true, // 자연스러운 스크롤
 });
+const swiper5 = new Swiper("._fixed .swiper", {
+  slidesPerView: "auto", // 자동 너비
+  spaceBetween: 0,
+  freeMode: false, // 자연스러운 스크롤
+});
