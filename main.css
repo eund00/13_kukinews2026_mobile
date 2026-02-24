@@ -739,9 +739,8 @@ section.section_4 .top a::after {
 }
 
 ._fixed {
-  bottom: -50px;
   transition: transform 0.3s ease;
 }
 ._fixed.hide {
-  transform: translateY(-50px);
+  transform: translateY(100%);
 }

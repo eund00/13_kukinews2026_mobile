@@ -68,16 +68,21 @@ const swiper5 = new Swiper("._fixed .swiper", {
 
 let lastScroll = 0;
 const header = document.querySelector("._fixed");
+const threshold = 80;
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
 
-  if (currentScroll > lastScroll) {
-    // 아래로 스크롤
-    header.classList.add("hide");
-  } else {
-    // 위로 스크롤
+  // 맨 위에서는 항상 보이게
+  if (currentScroll <= 0) {
     header.classList.remove("hide");
+    return;
+  }
+
+  if (currentScroll > threshold && currentScroll > lastScroll) {
+    header.classList.add("hide"); // 아래로
+  } else {
+    header.classList.remove("hide"); // 위로
   }
 
   lastScroll = currentScroll;
