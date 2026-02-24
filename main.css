@@ -9,7 +9,7 @@ header {
 .header_top {
   display: flex;
   justify-content: space-between;
-  margin: 25px 15px 0;
+  margin: 10px 15px 0;
 }
 .header_top .logo {
   max-width: 115px;
@@ -464,6 +464,7 @@ section.section_4 .top a::after {
 }
 .section_8 .twrap a {
   text-decoration: none;
+  color: #626262;
 }
 .section_8 .opinion li {
   display: flex;
@@ -519,6 +520,7 @@ section.section_4 .top a::after {
 }
 .section_9 .twrap a {
   text-decoration: none;
+  color: #626262;
 }
 .section_9 ._main {
   margin-top: 20px;
@@ -583,6 +585,7 @@ section.section_4 .top a::after {
 }
 .section_10 .twrap a {
   text-decoration: none;
+  color: #626262;
 }
 .section_10 .item_wrap {
   margin-top: 20px;
