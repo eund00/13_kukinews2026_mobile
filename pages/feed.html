@@ -24,6 +24,7 @@
         </h1>
         <ul class="list">
           <li><img src="../img/main_1.png" alt="" /></li>
+          <li id="btn-reporter"><img src="../img/main_1-2.png" alt="" /></li>
           <li style="display: none"><img src="../img/main_2.png" alt="" /></li>
           <li style="display: none"><span class="line"></span></li>
         </ul>
@@ -33,7 +34,7 @@
       <div class="gnb_box">
         <div class="swiper">
           <ul class="swiper-wrapper">
-            <li class="swiper-slide"><a href="#none">최신순</a></li>
+            <li class="swiper-slide active"><a href="#none">최신순</a></li>
             <li class="swiper-slide"><a href="#none">좋아요 많은 순</a></li>
             <li class="swiper-slide"><a href="#none">공유 많은 순</a></li>
             <li class="swiper-slide"><a href="#none">경제</a></li>
@@ -142,7 +143,7 @@
         </div>
       </div>
       <ul class="article_wrap">
-        <li>
+        <li class="article_list">
           <div class="top_wrap">
             <div class="img_box">
               <img src="../img/feed_ppl (1).jpg" alt="" />
@@ -188,7 +189,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="article_list">
           <div class="top_wrap">
             <div class="img_box">
               <img src="../img/feed_ppl (2).jpg" alt="" />
@@ -234,7 +235,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="article_list">
           <div class="top_wrap">
             <div class="img_box">
               <img src="../img/feed_ppl (3).jpg" alt="" />
@@ -280,7 +281,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="article_list">
           <div class="top_wrap">
             <div class="img_box">
               <img src="../img/feed_ppl (4).jpg" alt="" />
@@ -335,6 +336,40 @@
       </div>
     </section>
   </body>
+  <style>
+    .is-hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    // btn-reporter toggle
+    const btn = document.getElementById("btn-reporter");
+    const reporter = document.querySelector(".reporter-wrapper");
+
+    btn.addEventListener("click", () => {
+      reporter.classList.toggle("is-hidden");
+    });
+
+    // article-list random
+    const slides = document.querySelectorAll(
+      ".gnb_box .swiper .swiper-wrapper .swiper-slide",
+    );
+    const articleWrap = document.querySelector("ul.article_wrap");
+
+    slides.forEach((slide) => {
+      slide.addEventListener("click", function () {
+        slides.forEach((s) => s.classList.remove("active"));
+        this.classList.add("active");
+        const items = Array.from(articleWrap.querySelectorAll(".article_list"));
+        for (let i = items.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [items[i], items[j]] = [items[j], items[i]];
+        }
+
+        items.forEach((item) => articleWrap.appendChild(item));
+      });
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="feed.js"></script>
 </html>

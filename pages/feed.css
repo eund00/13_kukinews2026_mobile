@@ -78,11 +78,11 @@ header {
   border-radius: 25px;
   background-color: #ccc;
 }
-.gnb_box .swiper-slide.swiper-slide-active {
+.gnb_box .swiper-slide.active {
   background-color: #faa635;
 }
 
-.gnb_box .swiper-slide.swiper-slide-active a {
+.gnb_box .swiper-slide.active a {
   color: #fff;
 }
 .header-snb {
@@ -130,8 +130,8 @@ header {
   width: 25%;
 }
 .reporter-wrapper .swiper .swiper-wrapper .swiper-slide .img_box {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   overflow: hidden;
   border: 0.1rem solid #ccc;
@@ -141,6 +141,8 @@ header {
 }
 .reporter-wrapper .swiper .swiper-wrapper .swiper-slide .name {
   margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
 }
 /* 기사 내용 박스 */
 .article_wrap {

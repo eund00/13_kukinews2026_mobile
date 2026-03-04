@@ -6,6 +6,6 @@ const swiper = new Swiper(".gnb_box .swiper", {
 
 const swiper2 = new Swiper(".reporter-wrapper .swiper", {
   slidesPerView: "auto", // 자동 너비
-  spaceBetween: 25,
+  spaceBetween: 15,
   freeMode: true, // 자연스러운 스크롤
 });
