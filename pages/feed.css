@@ -13,15 +13,18 @@ section {
 header {
   max-width: 360px;
   margin: 0 auto;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 0.15rem solid #000;
 }
 .header_top {
   display: flex;
   justify-content: space-between;
   margin: 10px 15px 0;
+  align-items: baseline;
 }
 .header_top .logo {
+  font-size: 2rem;
+  font-weight: bold;
   max-width: 115px;
 }
 .header_top .logo img {
