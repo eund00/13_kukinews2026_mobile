@@ -602,6 +602,7 @@ section.section_4 .top a::after {
 .section_11 .map_wrap {
   border-top: 1px solid #ccc;
   cursor: pointer;
+  padding-left: 1rem;
 }
 .section_11 .title_wrap {
   display: flex;
@@ -723,31 +724,25 @@ section.section_4 .top a::after {
 ._fixed.hide {
   transform: translateY(100%);
 }
-.section_12 {
+.footer {
   width: 100%;
   background-color: #4c4c4c;
-  padding: 15px 15px 55px 15px;
+  padding: 1rem 1rem 2.5rem 1rem;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  margin-top: 4rem;
 }
-.section_12 .copyright {
-  float: left;
-  width: 70%;
-  font-size: 12px;
-  line-height: normal;
+.footer .copyright {
   color: #828282;
-  vertical-align: middle;
-  padding: 0;
-  height: 30px;
-  line-height: 30px;
+  line-height: 1.2;
 }
-.section_12 .link_pc a {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 12px;
-  height: 30px;
-  line-height: 28px;
-  padding: 0 7px;
+.footer .link_pc {
+  margin-top: 2rem;
+  text-align: right;
+}
+.footer .link_pc a {
   border: 1px solid #4c4c4c;
   color: #e1e1e1;
   background: #333;
-  margin-left: 25px;
+  padding: 0.2rem 0.5rem;
 }
