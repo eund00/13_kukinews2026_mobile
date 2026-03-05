@@ -1,0 +1,139 @@
+body {
+  width: 100vw;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+p {
+  font-size: 1rem;
+}
+section {
+  max-width: 360px;
+  margin: 0 auto;
+}
+header {
+  max-width: 360px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  border-bottom: 0.15rem solid #000;
+}
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 15px 0;
+  align-items: baseline;
+}
+.header_top .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  max-width: 115px;
+}
+.header_top .logo img {
+  width: 100%;
+}
+.header_top .list {
+  display: flex;
+  gap: 10px;
+}
+.header_top .list li img {
+  width: 100%;
+}
+.header_top .list li:nth-child(3) {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 10px;
+}
+.header_top .list li:nth-child(3)::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: -8px;
+}
+.header_top .list li:nth-child(3)::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -8px;
+}
+
+/* 상단 텍스트 영역 */
+.top_txt-wrap {
+  margin-top: 2rem;
+  text-align: center;
+}
+.top_txt-wrap .tit {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.top_txt-wrap .txt_list {
+  margin-top: 1rem;
+}
+.top_txt-wrap .txt {
+  line-height: 1.2;
+}
+.top_txt-wrap .txt:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+
+/* 상단 배너 영역 */
+.top_banner-wrap {
+  margin-top: 2rem;
+  padding: 3rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background: url("../img/oven_bg.png") center / cover;
+}
+.top_banner-wrap .tit_wrap {
+}
+.top_banner-wrap .tit_wrap .tit {
+  line-height: 1.5;
+}
+.top_banner-wrap .tit_wrap .tit._1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.top_banner-wrap .tit_wrap .tit._2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.top_banner-wrap .txt_wrap {
+  margin-top: 3rem;
+  padding: 0 0.5rem;
+}
+.top_banner-wrap .txt_wrap p {
+  line-height: 1.2;
+}
+.top_banner-wrap .txt_wrap p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+/* 기사 영역 */
+.article_wrap {
+  margin-top: 2rem;
+}
+.article_wrap .article_list {
+  display: flex;
+  border: 0.1rem solid #ccc;
+  padding: 0.5rem;
+}
+.article_wrap .article_list:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.article_wrap .article_list .img_box {
+  width: 8rem;
+  flex-shrink: 0;
+}
+.article_wrap .article_list .img_box img {
+  width: 100%;
+}
+.article_wrap .article_list .txt_box {
+}
+.article_wrap .article_list .txt_box .tit {
+}
+.article_wrap .article_list .txt_box .txt {
+}
