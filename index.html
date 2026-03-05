@@ -13,7 +13,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
         margin: 0;
       }
       .inner {
@@ -53,6 +52,14 @@
           memo_260304<br />
           시안2로 확정<br />
           1. PC 메인 슬라이드랑 같게<br />
+          ㄴ세로가 긴 사진의 경가 아닌, 가로가 긴 경우의 사진은 어떻게 할
+          것인지?<br />
+          <img
+            src="img/index (1).png"
+            data-full="img/index (1).png"
+            alt=""
+            style="width: 350px; margin: 20px 0"
+          /><br />
           2. 모바일에서 .header-snb 안 보이게<br />
           3. 메인 기사영역 순서 (제목 > 본문2줄 > 사진)
         </p>
@@ -72,5 +79,40 @@
         </li>
       </ul>
     </div>
+    <style>
+      .image-modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        cursor: zoom-out;
+      }
+
+      .image-modal img {
+        max-width: none;
+        max-height: none;
+      }
+    </style>
+    <script>
+      document.querySelectorAll("img").forEach((img) => {
+        img.addEventListener("click", () => {
+          const modal = document.createElement("div");
+          modal.classList.add("image-modal");
+
+          const fullImg = document.createElement("img");
+          fullImg.src = img.dataset.full || img.src;
+
+          modal.appendChild(fullImg);
+          document.body.appendChild(modal);
+
+          modal.addEventListener("click", () => {
+            modal.remove();
+          });
+        });
+      });
+    </script>
   </body>
 </html>
