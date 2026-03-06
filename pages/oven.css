@@ -141,15 +141,17 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  line-height: 1.2;
 }
 .article_wrap .article_list .txt_box .tit {
+  font-weight: bold;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
 }
 .article_wrap .article_list .txt_box .txt {
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
@@ -198,6 +200,7 @@ header {
 }
 .projects_wrap .swiper {
   margin-top: 20px;
+  padding-top: 10px;
 }
 .projects_wrap .swiper .img_box img {
   width: 100%;
