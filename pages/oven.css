@@ -126,14 +126,23 @@ header {
 /* 기사 영역 */
 .article_wrap {
   margin-top: 45px;
-  background-color: #fff1de;
-  padding: 1rem 0;
 }
 .article_wrap > p {
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.article_wrap > p::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 60px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
 }
 .article_wrap .swiper {
   width: 100%;
@@ -190,10 +199,21 @@ header {
   margin-top: 45px;
 }
 .sell_item > p {
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.sell_item > p::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 50px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
 }
 .sell_item li {
   margin-bottom: 20px;
@@ -231,10 +251,21 @@ header {
 .projects_wrap {
   margin-top: 60px;
 }
-.projects_wrap p {
-  text-align: center;
+.projects_wrap .title {
+  text-align: left;
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+.projects_wrap .title::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 90px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
 }
 .projects_wrap .swiper {
   margin-top: 20px;
