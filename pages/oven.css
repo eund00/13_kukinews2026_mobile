@@ -126,6 +126,8 @@ header {
 /* 기사 영역 */
 .article_wrap {
   margin-top: 45px;
+  background-color: #fff1de;
+  padding: 1rem 0;
 }
 .article_wrap > p {
   text-align: center;
