@@ -286,6 +286,79 @@ header {
   row-gap: 20px;
   margin-top: 20px;
 }
+/* commentSection */
+.commentSection {
+  margin-top: 20px;
+}
+.commentSection .commentTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.commentSection .commentTop .icon_wrap {
+  display: flex;
+  column-gap: 5px;
+}
+.commentSection .CommentMid {
+  margin-top: 10px;
+}
+.commentSection .CommentMid .comment_box textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+.commentSection .CommentMid .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.commentSection .CommentMid .flex p {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.commentSection .CommentMid .flex .comment_btn {
+  position: relative;
+}
+.commentSection .CommentMid .flex .comment_btn .main {
+  position: relative;
+  color: #e5496e;
+  align-items: center;
+  column-gap: 10px;
+}
+.commentSection .CommentMid .flex .comment_btn > ul {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  border: 1px solid #ccc;
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.commentSection .CommentMid .flex .comment_btn > ul li {
+  padding: 5px;
+}
+.commentSection .CommentMid .flex .comment_btn > ul li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.commentSection .commentBtm {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.commentSection .commentBtm p {
+  font-size: 12px;
+  line-height: 2;
+}
 
 /* original_slide */
 .original_slide {
@@ -331,6 +404,61 @@ header {
   font-weight: bold;
   line-height: 1.2;
   color: #fff;
+}
+/* manyViewSection */
+.manyViewSection {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #000;
+}
+.manyViewSection .tit {
+  font-size: 18px;
+  font-weight: bold;
+}
+.manyViewSection .manyViewList li {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 15px;
+}
+.manyViewSection .manyViewList li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #333;
+  transform: translateY(-50%);
+}
+.manyViewSection .manyViewList li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: -14px;
+  border: 1px dashed #333;
+  width: 35px;
+  transform: rotate(90deg);
+}
+.manyViewSection .manyViewList .txt {
+  font-size: 18px;
+  line-height: 1.36;
+  font-weight: normal;
+  word-break: keep-all;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* kukiHeadSection */
+.kukiHeadSection {
+  margin-top: 40px;
+}
+.kukiHeadSection .tit {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* 메뉴 모음 */

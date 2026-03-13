@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="deepDetail.css" />
   </head>
   <body>
@@ -423,6 +427,7 @@
           </li>
           <li class="ico_google">
             <svg
+              style="border: 1px solid #e6e6e6; border-radius: 50%"
               width="30"
               height="30"
               viewBox="0 0 24 24"
@@ -471,7 +476,7 @@
           </li>
         </ul>
         <p class="liveRe">
-          <span>LiveRe</span>
+          <span style="font-size: 12px">LiveRe</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="13"
@@ -518,16 +523,46 @@
         <div class="flex">
           <p class="comment_num">댓글 <span class="num">0</span></p>
           <div class="comment_btn">
-            <p class="main">최신순</p>
+            <p class="main">
+              최신순
+              <i class="fas fa-chevron-down"></i>
+            </p>
             <ul>
-              <li><p>최신순</p></li>
-              <li><p>공감순</p></li>
-              <li><p>과거순</p></li>
+              <li>
+                <p>
+                  <span>최신순</span>
+                  <i class="fas fa-check"></i>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>공감순</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>과거순</span>
+                </p>
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="commentBtm">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="#000"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H27C27.5304 6 28.0391 6.21071 28.4142 6.58579C28.7893 6.96086 29 7.46957 29 8V24C29 24.5304 28.7893 25.0391 28.4142 25.4142C28.0391 25.7893 27.5304 26 27 26H10.3123L6.28696 29.3839C5.99542 29.629 5.63996 29.7857 5.26239 29.8357C4.88482 29.8856 4.50083 29.8268 4.15558 29.666C3.81033 29.5052 3.51817 29.2491 3.31346 28.9279C3.10875 28.6068 3 28.2338 3 27.853V8C3 7.46957 3.21071 6.96086 3.58579 6.58579ZM27 8L5 8L5 27.853L9.02539 24.4691C9.38579 24.1661 9.84152 24 10.3123 24H27V8Z"
+            fill="var(--livere-secondary-90)"
+          ></path>
+        </svg>
         <p class="txt">
           가장 많은 사람들이 보는 댓글은 첫 댓글!<br />
           지금 첫 댓글을 남겨보세요!
@@ -614,7 +649,7 @@
         </ul>
       </div>
     </section>
-    <section class="moreViewSection">
+    <!-- <section class="moreViewSection">
       <p class="tit">심층기사 더보기</p>
       <ul>
         <li>
@@ -630,38 +665,49 @@
           <p>기사 제목주절주절주절</p>
         </li>
       </ul>
-    </section>
+    </section> -->
     <section class="manyViewSection">
       <p class="tit">많이 본 기사</p>
       <ul class="manyViewList">
         <li>
-          <p class="txt">
-            국민성장펀드 첫 직접 지분투자, 비상장 '리벨리온' 낙점
-          </p>
+          <a href="#none">
+            <p class="txt">
+              국민성장펀드 첫 직접 지분투자, 비상장 '리벨리온' 낙점
+            </p>
+          </a>
         </li>
         <li>
-          <p class="txt">
-            눈물 쏟은 박정아…페퍼 장소연 “허벅지 근육통 심해…무릎도 좋지 않다”
-          </p>
+          <a href="#none">
+            <p class="txt">
+              눈물 쏟은 박정아…페퍼 장소연 “허벅지 근육통 심해…무릎도 좋지 않다”
+            </p>
+          </a>
         </li>
         <li>
-          <p class="txt">
-            李대통령 지지율 56.1%…국민이 꼽은 최대 현안 ‘정치·사회 분열’
-          </p>
+          <a href="#none">
+            <p class="txt">
+              李대통령 지지율 56.1%…국민이 꼽은 최대 현안 ‘정치·사회 분열’
+            </p>
+          </a>
         </li>
         <li>
-          <p class="txt">
-            박혜수, 학폭 의혹 못 벗고 은퇴하나…11년 동행 소속사와 결별
-          </p>
+          <a href="#none">
+            <p class="txt">
+              박혜수, 학폭 의혹 못 벗고 은퇴하나…11년 동행 소속사와 결별
+            </p>
+          </a>
         </li>
         <li>
-          <p class="txt">
-            미, 이란 공습 이틀 만에 탄약비 8조 지출…韓 배치 사드도 중동으로
-          </p>
+          <a href="#none">
+            <p class="txt">
+              미, 이란 공습 이틀 만에 탄약비 8조 지출…韓 배치 사드도 중동으로
+            </p>
+          </a>
         </li>
       </ul>
     </section>
     <section class="kukiHeadSection">
+      <p class="tit">쿠키뉴스 헤드라인</p>
       <ul>
         <li>
           <div class="img_box"><img src="" alt="헤드라인 기사 이미지" /></div>
@@ -929,7 +975,19 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script>
-    const swiper1 = new Swiper(".original_slide .swiper", {
+    const swiper1 = new Swiper(".aboutSlide.swiper", {
+      loop: true,
+      slidesPerView: 1.4,
+      spaceBetween: 15,
+      speed: 35000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      // centeredSlides: true,
+    });
+
+    const swiper2 = new Swiper(".original_slide .swiper", {
       loop: true,
       slidesPerView: 1.4,
       spaceBetween: 15,
