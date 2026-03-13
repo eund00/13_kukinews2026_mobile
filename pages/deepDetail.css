@@ -1,8 +1,7 @@
 body {
   width: 100vw;
-  margin: 0 auto;
   overflow-x: hidden;
-  margin: 16px 0;
+  margin-top: 16px;
 }
 p {
   font-size: 16px;
@@ -332,4 +331,69 @@ header {
   font-weight: bold;
   line-height: 1.2;
   color: #fff;
+}
+
+/* 메뉴 모음 */
+
+.section_11 {
+  margin-top: 40px;
+}
+.section_11 .map_wrap {
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+.section_11 .title_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.section_11 .title_wrap p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.section_11 .title_wrap button {
+  font-size: 18px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  transform: rotate(90deg);
+}
+.section_11 .deep_wrap {
+  display: none;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  font-size: 18px;
+  color: #b3b3b3;
+  margin-bottom: 20px;
+}
+.section_11 .active .deep_wrap {
+  display: grid;
+}
+.section_11 .active .title_wrap button {
+  transform: rotate(270deg);
+}
+/* 푸터 */
+.footer {
+  width: 100%;
+  background-color: #4c4c4c;
+  padding: 1rem 1rem 2.5rem 1rem;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  margin-top: 4rem;
+}
+.footer .copyright {
+  color: #828282;
+  line-height: 1.2;
+}
+.footer .link_pc {
+  margin-top: 2rem;
+  text-align: right;
+}
+.footer .link_pc a {
+  border: 1px solid #4c4c4c;
+  color: #e1e1e1;
+  background: #333;
+  padding: 0.2rem 0.5rem;
 }
