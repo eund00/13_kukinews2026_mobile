@@ -460,6 +460,53 @@ header {
   font-size: 18px;
   font-weight: bold;
 }
+.kukiHeadSection > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+.kukiHeadSection > ul li img {
+  width: 100%;
+}
+.kukiHeadSection > ul li .txt {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: normal;
+  word-break: keep-all;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* youlikeSection */
+.youlikeSection {
+  margin-top: 40px;
+}
+.youlikeSection .top {
+  display: flex;
+  justify-content: space-between;
+}
+.youlikeSection .top .tit {
+  font-weight: bold;
+}
+.youlikeSection .top .tit .point {
+  color: #ffa415;
+}
+.youlikeSection .top .logo {
+  color: #999;
+  font-size: 11px;
+  display: flex;
+  gap: 5px;
+}
+.youlikeSection .top .logo b {
+  width: 46px;
+  display: inline-block;
+  height: 14px;
+  font-size: 0;
+  background-image: url("https://images.dable.io/static/i/logo-text-tiny-gray.png");
+}
 
 /* 메뉴 모음 */
 
