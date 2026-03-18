@@ -148,7 +148,6 @@ header {
 .about_wrap .about_list {
   display: flex;
   column-gap: 10px;
-  flex-direction: column;
 }
 .about_wrap .about_list_box {
   display: flex;
@@ -325,18 +324,20 @@ header {
   font-size: 18px;
   font-weight: bold;
 }
-.manyViewSection .aboutSlide {
+.manyViewSection .manySlide {
   margin-top: 10px;
 }
-.manyViewSection .aboutSlide .about_list .img_box {
+.manyViewSection .manySlide .many_list .img_box {
+  width: 250px;
+  height: 130px;
   overflow: hidden;
 }
-.manyViewSection .aboutSlide .about_list .img_box img {
+.manyViewSection .manySlide .many_list .img_box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.manyViewSection .aboutSlide .about_list .txt {
+.manyViewSection .manySlide .many_list .txt {
   margin-top: 10px;
 }
 .kukifeed {
