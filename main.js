@@ -64,6 +64,7 @@ const swiper5 = new Swiper("._fixed .swiper", {
   slidesPerView: "auto", // 자동 너비
   spaceBetween: 0,
   freeMode: false, // 자연스러운 스크롤
+  centeredSlides: true,
 });
 
 let lastScroll = 0;
