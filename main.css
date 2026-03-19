@@ -109,11 +109,12 @@ header {
 .section_1 p {
   text-align: center;
   font-size: 22px;
-  margin-top: 5px;
+  margin-top: 10px;
   line-height: 1.2;
 }
 .section_2 {
   margin-top: 25px;
+  margin-top: 40px;
 }
 .section_2 ul {
   display: grid;
@@ -169,7 +170,7 @@ header {
   left: 10px;
   top: 2px;
   animation: floatY 2s ease-in-out infinite;
-  transform: scaleX(-1) rotate(35deg);
+  /* transform: scaleX(-1) rotate(35deg); */
 }
 @keyframes floatY {
   0% {
