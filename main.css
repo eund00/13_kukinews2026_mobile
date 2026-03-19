@@ -318,6 +318,7 @@ section.section_4 .top a::after {
   border-top: 2px solid #000;
 }
 .section_5 .article._line {
+  display: block;
   padding-top: 20px;
   margin-top: 20px;
   border-top: 1px solid #ccc;
