@@ -646,6 +646,8 @@ section.section_4 .top a::after {
   right: 0;
   bottom: 0;
   z-index: 999;
+  max-width: 360px;
+  margin: 0 auto;
 }
 ._fixed .swiper {
   padding-top: 10px;
