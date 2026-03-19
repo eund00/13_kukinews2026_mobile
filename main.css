@@ -652,7 +652,7 @@ section.section_4 .top a::after {
 }
 .btm_btn {
   display: flex;
-  max-width: 360px;
+  /* max-width: 360px; */
   margin: 0 auto;
   padding: 15px;
   background-color: #faa635;
@@ -726,13 +726,21 @@ section.section_4 .top a::after {
 ._fixed.hide {
   transform: translateY(100%);
 }
-.footer {
+/* .footer {
   width: 100%;
   background-color: #4c4c4c;
   padding: 1rem 1rem 2.5rem 1rem;
   box-sizing: border-box;
   font-size: 0.8rem;
   margin-top: 4rem;
+} */
+.footer {
+  width: 100%;
+  padding: 1rem 1rem 2.5rem 1rem;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  margin-top: 4rem;
+  background-color: #fff;
 }
 .footer .copyright {
   color: #828282;
@@ -747,4 +755,10 @@ section.section_4 .top a::after {
   color: #e1e1e1;
   background: #333;
   padding: 0.2rem 0.5rem;
+
+  background: #333;
+  padding: 0.2rem 0.5rem;
+  color: #5f5e5e;
+  background-color: #fff;
+  border: 1px solid #ccc;
 }

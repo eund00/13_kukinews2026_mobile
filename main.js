@@ -67,24 +67,24 @@ const swiper5 = new Swiper("._fixed .swiper", {
   centeredSlides: true,
 });
 
-let lastScroll = 0;
-const header = document.querySelector("._fixed");
-const threshold = 80;
+// let lastScroll = 0;
+// const header = document.querySelector("._fixed");
+// const threshold = 80;
 
-window.addEventListener("scroll", () => {
-  const currentScroll = window.scrollY;
+// window.addEventListener("scroll", () => {
+//   const currentScroll = window.scrollY;
 
-  // 맨 위에서는 항상 보이게
-  if (currentScroll <= 0) {
-    header.classList.remove("hide");
-    return;
-  }
+//   // 맨 위에서는 항상 보이게
+//   if (currentScroll <= 0) {
+//     header.classList.remove("hide");
+//     return;
+//   }
 
-  if (currentScroll > threshold && currentScroll > lastScroll) {
-    header.classList.add("hide"); // 아래로
-  } else {
-    header.classList.remove("hide"); // 위로
-  }
+//   if (currentScroll > threshold && currentScroll > lastScroll) {
+//     header.classList.add("hide"); // 아래로
+//   } else {
+//     header.classList.remove("hide"); // 위로
+//   }
 
-  lastScroll = currentScroll;
-});
+//   lastScroll = currentScroll;
+// });
