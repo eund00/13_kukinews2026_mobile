@@ -176,7 +176,6 @@ header {
 }
 .card_wrap .flex {
   display: flex;
-  justify-content: center;
   column-gap: 20px;
 }
 .card_wrap .img_box {
@@ -189,7 +188,7 @@ header {
   width: 100%;
 }
 .card_wrap .name_box {
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -497,4 +496,112 @@ header {
   color: #e1e1e1;
   background: #333;
   padding: 0.2rem 0.5rem;
+}
+
+.section_3 {
+  margin-top: 30px;
+}
+.section_3 .title-wrap {
+  position: relative;
+  color: #3596fa;
+  color: #faa635;
+  overflow: hidden;
+}
+.section_3 .title-wrap .tit {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.section_3 .title-wrap .tit ._icon {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 52px;
+  background-image: url(img/main_5.png);
+  background-size: contain;
+  background-position: center center;
+}
+.section_3 .title-wrap .tit ._icon ._finger {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  animation: floatY 2s ease-in-out infinite;
+  transform: scaleX(-1) rotate(35deg);
+}
+@keyframes floatY {
+  0% {
+    top: 2px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 2px;
+  }
+}
+.section_3 .title-wrap .tit::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #3596fa;
+  background-color: #faa635;
+  margin-left: 140px;
+}
+.section_3 .title-wrap > a {
+  text-align: right;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  font-size: 15px;
+  color: #626262;
+  margin-top: 10px;
+}
+.section_3 .title-wrap .txt {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-top: 15px;
+}
+.section_3 .kuki-box {
+  border: 2px solid #3596fa;
+  border-color: #faa635;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.section_3 .kuki-box .txt-wrap {
+  padding: 15px 10px;
+}
+.section_3 .kuki-box .txt-wrap p:nth-child(2) {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.section_3 .kuki-box .txt-wrap p:nth-child(3) {
+  margin-top: 25px;
+}
+.section_3 .kuki-box .img-wrap {
+  position: relative;
+  height: 300px;
+}
+.section_3 .kuki-box .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section_3 .kuki-box .img-wrap p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 15px 10px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.section_3 .kuki-box .btm-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
 }
