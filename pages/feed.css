@@ -76,7 +76,7 @@ header {
 .gnb_box .swiper-slide {
   padding: 0.4rem 1rem;
   border-radius: 25px;
-  background-color: #ccc;
+  background-color: #e3e3e3;
 }
 .gnb_box .swiper-slide.active {
   background-color: #faa635;
