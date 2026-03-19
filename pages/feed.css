@@ -198,10 +198,14 @@ header {
   padding: 0.5rem 0.8rem;
 }
 .article_wrap .btn_wrap .img_box {
-  width: 1.5rem;
+  width: 2rem;
 }
 .article_wrap .btn_wrap .img_box img {
   width: 100%;
+}
+.article_wrap .btn_wrap .num {
+  line-height: 32px;
+  padding-bottom: 3px;
 }
 .article_wrap .btn_wrap .left_wrap {
   display: flex;
