@@ -203,10 +203,8 @@ header {
   border-radius: 25px;
 }
 .card_wrap .des_box {
-  padding: 20px;
-  background: #fec57b40;
-  border-radius: 15px;
-  margin-top: 15px;
+  padding: 25px 0;
+  border-bottom: 2px solid #000;
 }
 .card_wrap .des_box p {
   text-align: center;
