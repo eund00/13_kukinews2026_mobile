@@ -213,47 +213,45 @@ header {
 .btmSection .about_wrap .about_list p.txt {
   line-height: 1.2;
 }
-.btmSection .card_wrap {
+
+.card_wrap {
   padding-top: 20px;
   margin-top: 20px;
   border-top: 1px solid #ccc;
 }
-.btmSection .card_wrap .flex {
+.card_wrap .flex {
   display: flex;
-  justify-content: center;
   column-gap: 20px;
 }
-.btmSection .card_wrap .img_box {
+.card_wrap .img_box {
   border-radius: 50%;
   overflow: hidden;
   width: 80px;
   height: 80px;
 }
-.btmSection .card_wrap .img_box img {
+.card_wrap .img_box img {
   width: 100%;
 }
-.btmSection .card_wrap .name_box {
-  text-align: center;
+.card_wrap .name_box {
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 10px;
 }
-.btmSection .card_wrap .name_box .name {
+.card_wrap .name_box .name {
   font-weight: bold;
 }
-.btmSection .card_wrap .name_box .all_btn {
+.card_wrap .name_box .all_btn {
   padding: 5px 10px;
   background-color: #ccc;
   border-radius: 25px;
 }
-.btmSection .card_wrap .des_box {
-  padding: 20px;
-  background: #fec57b40;
-  border-radius: 15px;
-  margin-top: 15px;
+.card_wrap .des_box {
+  padding: 25px 0;
+  border-bottom: 2px solid #000;
 }
-.btmSection .card_wrap .des_box p {
+.card_wrap .des_box p {
   text-align: center;
 }
 .btmSection .btn_wrap {
