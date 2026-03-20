@@ -118,7 +118,7 @@ header .headerGnb .swiper-slide a {
 }
 /* section2 */
 .section_2 {
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
 }
 .section_2 .grid2x2 {
   display: grid;
@@ -167,7 +167,7 @@ header .headerGnb .swiper-slide a {
 
 /* section_2 */
 .section_3 {
-  margin: 2.5rem 1rem 0;
+  margin: 3.5rem 1rem 0;
 }
 .section_3 .title-wrap {
   position: relative;
@@ -293,7 +293,7 @@ header .headerGnb .swiper-slide a {
 }
 /* section4 */
 .section_4 {
-  margin-top: 2.5rem;
+  margin-top: 4.5rem;
   padding: 3rem 0 2rem;
   background-color: #000;
 }
@@ -341,8 +341,8 @@ header .headerGnb .swiper-slide a {
 }
 .section_5 .article._line {
   display: block;
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding-top: 2.5rem;
+  margin-top: 4rem;
   border-top: 1px solid #ccc;
 }
 .section_5 .article .img_box {
