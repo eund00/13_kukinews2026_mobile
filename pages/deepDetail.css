@@ -499,6 +499,12 @@ header {
   align-items: center;
   column-gap: 0.4rem;
 }
+.kukifeed .kukiBox ._end .img_box {
+  width: 30px;
+}
+.kukifeed .kukiBox ._end .img_box img {
+  width: 100%;
+}
 .kukioven {
   margin-top: 20px;
   padding: 3rem 0.5rem;
