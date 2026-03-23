@@ -368,9 +368,9 @@ header .headerGnb .swiper-slide a {
 }
 .section_5 .article._line {
   display: block;
-  padding-top: 2.5rem;
-  margin-top: 4rem;
-  border-top: 1px solid #ccc;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 2px solid #000;
 }
 .section_5 .article .img_box {
   width: 100%;
