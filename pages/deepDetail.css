@@ -252,7 +252,20 @@ header {
   border-bottom: 2px solid #000;
 }
 .card_wrap .des_box p {
+  position: relative;
   text-align: center;
+  background: #fec57b40;
+  line-height: 4;
+  border-radius: 25px;
+  margin: 0 15px;
+}
+.card_wrap .des_box p::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  border: 10px solid transparent;
+  border-bottom-color: #fec57b40;
 }
 .btmSection .btn_wrap {
   margin-top: 20px;

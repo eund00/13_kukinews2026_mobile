@@ -15,56 +15,6 @@ section {
   max-width: 360px;
   margin: 0 auto;
 }
-/* header {
-  max-width: 360px;
-  margin: 0 auto;
-  padding-bottom: 16px;
-  border-bottom: 0.15rem solid #000;
-}
-.header_top {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 15px 0;
-  align-items: baseline;
-}
-.header_top .logo {
-  font-size: 2rem;
-  font-weight: bold;
-  max-width: 115px;
-}
-.header_top .logo img {
-  width: 100%;
-}
-.header_top .list {
-  display: flex;
-  gap: 10px;
-}
-.header_top .list li img {
-  width: 100%;
-}
-.header_top .list li:nth-child(3) {
-  position: relative;
-  width: 20px;
-  height: 2px;
-  background-color: #000;
-  margin-top: 10px;
-}
-.header_top .list li:nth-child(3)::before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  position: absolute;
-  top: -8px;
-}
-.header_top .list li:nth-child(3)::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  position: absolute;
-  bottom: -8px;
-} */
 
 /* header */
 header .headerTop {
@@ -254,17 +204,34 @@ header .headerGnb .swiper-slide a {
 .card_wrap .name_box .name {
   font-weight: bold;
 }
+.card_wrap .name_box .more:hover {
+  text-decoration: underline;
+}
+
 .card_wrap .name_box .all_btn {
   padding: 5px 10px;
   background-color: #ccc;
   border-radius: 25px;
 }
 .card_wrap .des_box {
-  padding: 25px 0;
+  padding: 20px 0;
   border-bottom: 2px solid #000;
 }
 .card_wrap .des_box p {
+  position: relative;
   text-align: center;
+  background: #fec57b40;
+  line-height: 4;
+  border-radius: 25px;
+  margin: 0 15px;
+}
+.card_wrap .des_box p::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  border: 10px solid transparent;
+  border-bottom-color: #fec57b40;
 }
 .btn_wrap {
   margin-top: 20px;
