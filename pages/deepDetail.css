@@ -607,3 +607,31 @@ header {
   background: #333;
   padding: 0.2rem 0.5rem;
 }
+
+.section_3 .kuki-box .btn_wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  margin-top: 0;
+}
+.section_3 .kuki-box .btn_wrap .img_box {
+  width: 2rem;
+}
+.section_3 .kuki-box .btn_wrap .img_box img {
+  width: 100%;
+}
+.section_3 .kuki-box .btn_wrap .num {
+  line-height: 32px;
+  padding-bottom: 3px;
+}
+.section_3 .kuki-box .btn_wrap .left_wrap {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: baseline;
+}
+.section_3 .kuki-box .btn_wrap .left_wrap .icon_heart {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+}
