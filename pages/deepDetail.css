@@ -92,6 +92,10 @@ header .headerGnb .swiper-slide a {
 }
 .topSection .subTit_wrap .subTit {
   line-height: 1.4;
+  font-size: 14px;
+}
+.topSection .subTit_wrap .subTit:not(:last-child) {
+  margin-bottom: 5px;
 }
 .topSection .img_wrap {
   margin-top: 20px;
