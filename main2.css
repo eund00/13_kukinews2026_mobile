@@ -160,7 +160,7 @@ header .headerGnb .swiper-slide a {
   position: absolute;
   left: 0;
   bottom: 0;
-  margin: 5px;
+  margin: 6px 8px;
   color: #fff;
   font-weight: bold;
 }
