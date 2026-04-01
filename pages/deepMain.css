@@ -99,9 +99,9 @@ header {
   margin-bottom: 20px;
 }
 .main_slide .in .img_box {
-  height: 320px;
   border-radius: 15px;
   overflow: hidden;
+  aspect-ratio: 4/5;
 }
 .main_slide .in .img_box img {
   height: 100%;
