@@ -120,7 +120,34 @@ header .headerGnb .swiper-slide a {
   background-image: url("../img/deepDetail_icon.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 190px 3px;
+  background-position: 190px 2px;
+}
+.topSection .literacy_wrap .box .rel {
+  position: relative;
+  cursor: pointer;
+}
+.topSection .literacy_wrap .box .rel .ab {
+  display: none;
+}
+.topSection .literacy_wrap .box .rel .ab.open {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #efd5b2;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 80%;
+  display: block;
+}
+.topSection .literacy_wrap .box .rel .ab.open::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 144px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #f9dab0;
 }
 .topSection .literacy_wrap .box table {
   border-collapse: collapse;
@@ -779,6 +806,7 @@ header .headerGnb .swiper-slide a {
 }
 .fixed li .txt {
   font-size: 20px;
+  line-height: 2;
 }
 .fixed li.active .txt {
   color: #faa635;

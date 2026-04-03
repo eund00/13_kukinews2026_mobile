@@ -196,6 +196,7 @@ header {
 }
 .fixed li.active .txt {
   color: #faa635;
+  line-height: 2;
 }
 .fixed li.feed {
   border-right: 1px solid #ccc;

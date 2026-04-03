@@ -83,9 +83,9 @@ header .headerGnb .swiper-slide a {
   font-weight: bold;
 }
 .topSection .tit_wrap .data {
-  margin-top: 10px;
-  text-align: left;
-  color: #333;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
 }
 .topSection .subTit_wrap {
   padding: 0 10px;
@@ -188,16 +188,17 @@ header .headerGnb .swiper-slide a {
   overflow: hidden;
   width: 80px;
   height: 80px;
+  flex-shrink: 0;
 }
 .card_wrap .img_box img {
   width: 100%;
 }
 .card_wrap .name_box {
-  text-align: left;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 100px);
+  padding: 0 5px;
 }
 .card_wrap .name_box .name {
   font-weight: bold;
@@ -685,6 +686,7 @@ header .headerGnb .swiper-slide a {
 }
 .fixed li.active .txt {
   color: #faa635;
+  line-height: 2;
 }
 .fixed li.feed {
   border-right: 1px solid #ccc;

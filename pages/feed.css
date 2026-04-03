@@ -364,6 +364,7 @@ header {
   gap: 10px;
   color: #ccc;
   line-height: 2;
+  text-decoration: none;
 }
 .fixed li .img_box {
   width: 40px;

@@ -70,7 +70,20 @@
       <div class="literacy_wrap">
         <p class="txt">💡좋은 뉴스는 독자의 균형있는 읽기로 완성됩니다.</p>
         <div class="box">
-          <p class="des">뉴스 성분표(KuKi Literacy)</p>
+          <div class="rel literacy_click">
+            <p class="des">뉴스 성분표(KuKi Literacy)</p>
+            <p class="ab">
+              쿠키뉴스는 뉴스 성분표를 운영하고 있습니다. 성분표란..
+            </p>
+          </div>
+          <script>
+            const literacy = document.querySelector(".literacy_click");
+            const ab = literacy.querySelector(".ab");
+
+            literacy.addEventListener("click", () => {
+              ab.classList.toggle("open");
+            });
+          </script>
           <table>
             <tbody>
               <tr>
@@ -1058,19 +1071,16 @@
     <ul class="fixed">
       <li class="news">
         <a href="../main2.html">
-          <div class="img_box"></div>
           <p class="txt">뉴스</p>
         </a>
       </li>
       <li class="feed active">
         <a href="feed.html">
-          <div class="img_box"></div>
           <p class="txt">피드</p>
         </a>
       </li>
       <li class="oven">
         <a href="oven.html">
-          <div class="img_box"></div>
           <p class="txt">오븐</p>
         </a>
       </li>
