@@ -151,18 +151,15 @@ header .headerGnb .swiper-slide a {
   padding-top: 15px;
   border-top: 2px solid #000;
 }
-.about_wrap .about_list {
-  display: flex;
-  column-gap: 10px;
-}
 .about_wrap .about_list_box {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
   margin-top: 10px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 6px;
+  row-gap: 12px;
 }
 .about_wrap .about_list .img_box {
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 3 / 2;
   max-width: 200px;
 }
 .about_wrap .about_list .img_box img {
@@ -171,8 +168,11 @@ header .headerGnb .swiper-slide a {
   object-fit: cover;
 }
 .about_wrap .about_list p.txt {
-  width: 200px;
   line-height: 1.2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
 }
 .card_wrap {
   padding-top: 20px;
@@ -662,6 +662,7 @@ header .headerGnb .swiper-slide a {
   background-color: #fff;
   padding: 8px 0;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 .fixed li {
   width: calc(100% / 3);
