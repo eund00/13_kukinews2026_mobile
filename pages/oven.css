@@ -196,10 +196,12 @@ header {
 }
 .newArticle_wrap .page_wrap .num.active {
   background-color: #faa635;
-  color: #faa635;
+  color: #fff;
+  border-color: #fff;
 }
 .newArticle_wrap .page_wrap .num.arrow {
   border: none;
+  color: #faa635;
 }
 /* 기사 영역 */
 .article_wrap {
